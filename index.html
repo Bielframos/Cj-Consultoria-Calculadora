@@ -18,7 +18,7 @@
             <article>
                 <div class="input shadow">
                     <label for="portionAmount">Valor da parcela</label>
-                    <input type="Text" size="12" onKeyUp="mascaraMoeda(this, event)" id="portionAmount" placeholder="Valor da parcela">
+                    <input type="Text" pattern="[0-9]*" inputmode="numeric" size="12" onKeyUp="mascaraMoeda(this, event)" id="portionAmount" placeholder="Valor da parcela">
                 </div>
                 <div class="input shadow">
                     <label for="totalInstallments">Total de parcelas</label>
