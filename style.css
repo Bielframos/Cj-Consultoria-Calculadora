@@ -52,7 +52,6 @@ gap: 24px;
     max-width: 894px;
     padding: 0 16px;
     margin: 0 auto;
-    background-color: #F2F3F9;
 }
 
 /* tipos */
@@ -244,7 +243,8 @@ svg {
     }
     
     .container {
-        margin-top: 48px;
+        height: 100%;
+        padding-top: 48px;
         justify-content: start;
     }
 
