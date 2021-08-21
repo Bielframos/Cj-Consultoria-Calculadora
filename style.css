@@ -233,6 +233,7 @@ svg {
 
     .container {
         padding: 0 48px;
+        height: 100%;
     }       
 }
 
@@ -243,7 +244,8 @@ svg {
     
     .container {
         padding: 48px 16px;
-        justify-content: start;
+        justify-content: center;
+        height: fit-content;
     }
 
     section {
