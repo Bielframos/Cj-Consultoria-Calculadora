@@ -235,11 +235,11 @@ bancos.map((e)=> {
 menu.addEventListener('click', (e)=> {
     let bankTarget = bancos.find((objeto)=> objeto.banco == e.target.innerHTML);
     let bankRate = bankTarget.taxa;
-    document.getElementById('percent').innerHTML = bankRate + ' %';
-    document.getElementById('bankInputName').innerHTML = bankTarget.banco;
     if (portionAmount.value === 0 || portionAmount.value === '') {
-        alert('Adicione o valor da parcela e a quantidade total de parcelas')
+        return alert('Adicione o valor da parcela e a quantidade total de parcelas')
     } else {
+        document.getElementById('percent').innerHTML = bankRate + ' %';
+        document.getElementById('bankInputName').innerHTML = bankTarget.banco;
         let remainderToPayValue = remainderToPay.innerText.replace('R$','');
         remainderToPayValue = (parseFloat(remainderToPayValue.replaceAll('.','').replace(',','.')));
         let cjDiscount = remainderToPayValue - (remainderToPayValue * bankRate / 100);
