@@ -243,10 +243,10 @@ svg {
     }
     
     .container {
-        height: fit-content;
         padding-top: 48px;
         padding-bottom: 48px;
         justify-content: start;
+        background-color: #F2F3F9;
     }
 
     section {
