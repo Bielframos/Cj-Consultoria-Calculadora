@@ -242,6 +242,10 @@ svg {
         display: none;
     }
     
+    html, body {
+        height: fit-content;
+    }
+
     .container {
         padding: 48px 16px;
         justify-content: center;
