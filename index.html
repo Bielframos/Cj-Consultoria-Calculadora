@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Simulador Cj Consultoria</title>
+</head>
+<body>
+    <div class="container">
+        <p class="subtitle">Simulador Cj Consultoria</p>
+        <p class="h1 onlyDesktop">Simule o quanto a Cj Consultoria pode diminuir sua dívida.</p>
+        <p class="h4 onlyMobile">Simule o quanto a Cj Consultoria pode diminuir sua dívida.</p>
+    
+        <section>
+            <article>
+                <div class="input shadow">
+                    <label for="portionAmount">Valor da parcela</label>
+                    <input type="Text" size="12" onKeyUp="mascaraMoeda(this, event)" id="portionAmount" placeholder="Valor da parcela">
+                </div>
+                <div class="input shadow">
+                    <label for="totalInstallments">Total de parcelas</label>
+                    <input type="number" min="0" name="totalInstallments" id="totalInstallments" placeholder="Total de parcelas">
+                </div>
+                <div class="input shadow">
+                    <label for="paidInstallments">Parcelas pagas</label>
+                    <input type="number" min="0" name="paidInstallments" id="paidInstallments" placeholder="Parcelas pagas">
+                </div>
+                <div class="bankMenu shadow">
+                    <p id='bankInputName' class="body textColorMedium">Banco credor</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M24 24H0V0h24v24z" fill="none" opacity=".87"/><path d="M15.88 9.29L12 13.17 8.12 9.29c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41-.39-.38-1.03-.39-1.42 0z"/></svg>
+                    <div class="menu shadow displayNone">
+                    </div>
+            </article>
+            <article class="display">
+                <div>
+                    <p class="body textColorWMedium">Quanto resta pagar</p>
+                    <h6 id="remainderToPay" class="h6"><span>R$</span>0,00</h6>
+                    <p id="discountPercent" class="body textColorWMedium">Porcentagem de desconto</p>
+                    <h6 id='percent' class="h6">0<span>%</span></h6>
+                </div>
+                <div>
+                    <p class="body textColorWMedium">Com a Cj Consultoria você paga</p>
+                    <h6 id="whatWeGot" class="h6"><span>R$</span>0,00</h6>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
