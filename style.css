@@ -243,8 +243,9 @@ svg {
     }
     
     .container {
-        height: 100%;
+        height: fit-content;
         padding-top: 48px;
+        padding-bottom: 48px;
         justify-content: start;
     }
 
