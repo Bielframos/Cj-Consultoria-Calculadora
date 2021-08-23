@@ -22,7 +22,7 @@ String.prototype.reverse = function(){
 
 // Menu
 
-let icon = document.querySelector('svg');
+let icon = document.querySelector('.arrowAnimate');
 let menu = document.querySelector('.menu');
 
 document.querySelector('.bankMenu').addEventListener('click', ()=>{
