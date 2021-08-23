@@ -10,6 +10,12 @@
 </head>
 <body>
     <div class="container">
+      
+        <a href="https://www.cjconsultoriafinanceira.com/" class="body btnWithIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/></svg>
+            Voltar para o site
+        </a>
+        
         <p class="subtitle">Simulador Cj Consultoria</p>
         <p class="h1 onlyDesktop">Simule o quanto a Cj Consultoria pode diminuir sua dívida.</p>
         <p class="h4 onlyMobile">Simule o quanto a Cj Consultoria pode diminuir sua dívida.</p>
@@ -18,15 +24,15 @@
             <article>
                 <div class="input shadow">
                     <label for="portionAmount">Valor da parcela</label>
-                    <input type="Text" pattern="[0-9]*" inputmode="numeric" size="12" onKeyUp="mascaraMoeda(this, event)" id="portionAmount" placeholder="Valor da parcela">
+                    <input type="Text" pattern="[0-9]*" inputmode="numeric" size="12" onKeyUp="mascaraMoeda(this, event)" id="portionAmount" placeholder="R$ 1.500,00">
                 </div>
                 <div class="input shadow">
                     <label for="totalInstallments">Total de parcelas</label>
-                    <input type="number" min="0" name="totalInstallments" id="totalInstallments" placeholder="Total de parcelas">
+                    <input type="number" min="0" name="totalInstallments" pattern="[0-9]*" inputmode="numeric" id="totalInstallments" placeholder="15 Parcelas">
                 </div>
                 <div class="input shadow">
                     <label for="paidInstallments">Parcelas pagas</label>
-                    <input type="number" min="0" name="paidInstallments" id="paidInstallments" placeholder="Parcelas pagas">
+                    <input type="number" min="0" pattern="[0-9]*" inputmode="numeric" name="paidInstallments" id="paidInstallments" placeholder="5 Parcelas">
                 </div>
                 <div class="bankMenu shadow">
                     <p id='bankInputName' class="body textColorMedium">Banco credor</p>
@@ -47,6 +53,11 @@
                 </div>
             </article>
         </section>
+
+        <a href="https://api.whatsapp.com/send?phone=5581971211062&text=Desejo%20falar%20com%20um%20consultor!" class="body btnFilled">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g><path d="M21,12.22C21,6.73,16.74,3,12,3c-4.69,0-9,3.65-9,9.28C2.4,12.62,2,13.26,2,14v2c0,1.1,0.9,2,2,2h0c0.55,0,1-0.45,1-1 l0-4.81c0-3.83,2.95-7.18,6.78-7.29c3.96-0.12,7.22,3.06,7.22,7V19h-7c-0.55,0-1,0.45-1,1v0c0,0.55,0.45,1,1,1h7c1.1,0,2-0.9,2-2 v-1.22c0.59-0.31,1-0.92,1-1.64v-2.3C22,13.14,21.59,12.53,21,12.22z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M18,11.03C17.52,8.18,15.04,6,12.05,6c-3.03,0-6.29,2.51-6.03,6.45c2.47-1.01,4.33-3.21,4.86-5.89 C12.19,9.19,14.88,11,18,11.03z"/></g></g></svg>
+            Falar com um consultor
+        </a>
     </div>
 </body>
 </html>
